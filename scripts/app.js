@@ -1,10 +1,7 @@
 import { data, initCatalog } from "./catalog.js";
 import { initModal } from "./modal.js";
 
-if (
-  window.location.pathname === "/" ||
-  window.location.pathname.endsWith("index.html")
-) {
+if (document.body.dataset.page === "index") {
   const swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
@@ -12,7 +9,7 @@ if (
   });
 }
 
-if (window.location.pathname.includes("catalog.html")) {
+if (document.body.dataset.page === "catalog") {
   initCatalog(data);
 }
 
@@ -63,7 +60,7 @@ const handleMenuClose = () => {
 menuBtn.addEventListener("click", handleMenuOpen);
 menuClose.addEventListener("click", handleMenuClose);
 
-if (window.location.pathname.includes("contacts.html")) {
+if (document.body.dataset.page === "contacts") {
   const map = L.map("map").setView([53.3474, 83.7788], 16);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {

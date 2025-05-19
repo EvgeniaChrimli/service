@@ -1,28 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог</title>
-    <link rel="stylesheet" href="../main.css" />
+    <base href="/service/" />
+    <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
+  <body data-page="catalog">
     <header class="header">
       <div class="container">
         <div class="header_body">
-          <img src="/assets/images/log.svg" alt="logo" class="header_logo" />
+          <img src="assets/images/log.svg" alt="logo" class="header_logo" />
           <nav class="nav">
             <ul class="nav_list">
               <li class="nav_item">
-                <a href="/pages/services.html" class="nav_link">Услуги</a>
+                <a href="pages/services.html" class="nav_link">Услуги</a>
               </li>
               <li class="nav_item">
-                <a href="/pages/catalog.html" class="nav_link"
+                <a href="pages/catalog.html" class="nav_link"
                   >Каталог товаров</a
                 >
               </li>
               <li class="nav_item">
-                <a href="/pages/contacts.html" class="nav_link">Контакты</a>
+                <a href="pages/contacts.html" class="nav_link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -34,18 +35,18 @@
       </div>
       <div class="men">
         <div class="men_top">
-          <img src="/assets/images/logotip.png" class="men_title" />
-          <img class="men_close" src="/assets/images/close.svg" alt="close" />
+          <img src="assets/images/logotip.png" class="men_title" />
+          <img class="men_close" src="assets/images/close.svg" alt="close" />
         </div>
         <ul class="men_list">
           <li class="men_item">
-            <a href="/pages/services.html" class="men_link">Услуги</a>
+            <a href="pages/services.html" class="men_link">Услуги</a>
           </li>
           <li class="men_item">
-            <a href="/pages/catalog.html" class="men_link">Каталог товаров</a>
+            <a href="pages/catalog.html" class="men_link">Каталог товаров</a>
           </li>
           <li class="men_item">
-            <a href="/pages/contacts.html" class="men_link">Контакты</a>
+            <a href="pages/contacts.html" class="men_link">Контакты</a>
           </li>
         </ul>
         <button id="header" class="men_btn white-btn">Запись на ремонт</button>
@@ -53,7 +54,7 @@
     </header>
     <div class="modal-overlay">
       <div class="modal">
-        <img src="/assets/images/close.svg" alt="close" class="modal_close" />
+        <img src="assets/images/close.svg" alt="close" class="modal_close" />
         <div class="modal_title"></div>
         <div class="modal_text">
           Если у вас появились вопросы по работе сервиса, или вы хотите узнать
@@ -80,8 +81,8 @@
     <section class="catalog">
       <div class="container">
         <div class="navigate mobile-navig-active">
-          <a href="../index.html" class="link">главная</a>
-          <img src="../assets/images/navig.svg" alt="" class="navigate-arrow" />
+          <a href="index.html" class="link">главная</a>
+          <img src="assets/images/navig.svg" alt="" class="navigate-arrow" />
           <p class="current">Каталог товаров</p>
         </div>
         <div class="catalog_title section-title">
@@ -95,9 +96,9 @@
           <div class="body-right">
             <div class="body-right_top">
               <div class="navigate mobile-navig">
-                <a href="../index.html" class="link">главная</a>
+                <a href="index.html" class="link">главная</a>
                 <img
-                  src="../assets/images/navig.svg"
+                  src="assets/images/navig.svg"
                   alt=""
                   class="navigate-arrow"
                 />
@@ -114,7 +115,7 @@
       <div class="container">
         <div class="footer-top">
           <img
-            src="/assets/images/logotip.png"
+            src="assets/images/logotip.png"
             alt="logo"
             class="footer-top_img"
           />
@@ -126,7 +127,7 @@
           <div class="footer-left">
             <div class="footer-left_row">
               <img
-                src="/assets/images/1.svg"
+                src="assets/images/1.svg"
                 alt="call"
                 class="footer-left_img"
               />
@@ -136,7 +137,7 @@
             </div>
             <div class="footer-left_row">
               <img
-                src="/assets/images/2.svg"
+                src="assets/images/2.svg"
                 alt="geo"
                 class="footer-left_img"
               />
@@ -144,7 +145,7 @@
             </div>
             <div class="footer-left_row">
               <img
-                src="/assets/images/2.svg"
+                src="assets/images/2.svg"
                 alt="work-time"
                 class="footer-left_img"
               />
@@ -154,17 +155,17 @@
           <div class="footer-center">
             <ul class="footer-center_list">
               <li class="footer-center_item">
-                <a href="/pages/services.html" class="footer-center_link"
+                <a href="pages/services.html" class="footer-center_link"
                   >Услуги</a
                 >
               </li>
               <li class="footer-center_item">
-                <a href="/pages/catalog.html" class="footer-center_link"
+                <a href="pages/catalog.html" class="footer-center_link"
                   >Каталог товаров</a
                 >
               </li>
               <li class="footer-center_item">
-                <a href="/pages/contacts.html" class="footer-center_link"
+                <a href="pages/contacts.html" class="footer-center_link"
                   >Контакты</a
                 >
               </li>
@@ -202,6 +203,6 @@
         </div>
       </div>
     </footer>
-    <script src="../scripts/app.js" type="module"></script>
+    <script src="scripts/app.js" type="module"></script>
   </body>
 </html>

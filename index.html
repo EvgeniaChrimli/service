@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Алтай кардан сервис</title>
+    <base href="/service/" />
     <link rel="stylesheet" href="main.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
   </head>
-  <body>
+  <body data-page="index">
     <header class="header">
       <div class="container">
         <div class="header_body">
@@ -18,15 +19,15 @@
           <nav class="nav">
             <ul class="nav_list">
               <li class="nav_item">
-                <a href="/pages/services.html" class="nav_link">Услуги</a>
+                <a href="pages/services.html" class="nav_link">Услуги</a>
               </li>
               <li class="nav_item">
-                <a href="/pages/catalog.html" class="nav_link"
+                <a href="pages/catalog.html" class="nav_link"
                   >Каталог товаров</a
                 >
               </li>
               <li class="nav_item">
-                <a href="/pages/contacts.html" class="nav_link">Контакты</a>
+                <a href="pages/contacts.html" class="nav_link">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -43,13 +44,13 @@
         </div>
         <ul class="men_list">
           <li class="men_item">
-            <a href="/pages/services.html" class="men_link">Услуги</a>
+            <a href="pages/services.html" class="men_link">Услуги</a>
           </li>
           <li class="men_item">
-            <a href="/pages/catalog.html" class="men_link">Каталог товаров</a>
+            <a href="pages/catalog.html" class="men_link">Каталог товаров</a>
           </li>
           <li class="men_item">
-            <a href="/pages/contacts.html" class="men_link">Контакты</a>
+            <a href="pages/contacts.html" class="men_link">Контакты</a>
           </li>
         </ul>
         <button id="header" class="men_btn white-btn">Запись на ремонт</button>
@@ -57,7 +58,7 @@
     </header>
     <div class="modal-overlay">
       <div class="modal">
-        <img src="/assets/images/close.svg" alt="close" class="modal_close" />
+        <img src="assets/images/close.svg" alt="close" class="modal_close" />
         <div class="modal_title"></div>
         <div class="modal_text">
           Если у вас появились вопросы по работе сервиса, или вы хотите узнать

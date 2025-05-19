@@ -6,7 +6,7 @@ export const data = [
       {
         id: 11,
         name: "Крестовина 15х38",
-        img: "/assets/images/catalog/img1.png",
+        img: "assets/images/catalog/img1.png",
         diametr: 15,
         size: 38,
         article: "ST 1538",
@@ -16,7 +16,7 @@ export const data = [
       {
         id: 12,
         name: "Крестовина 15х39, под кернение",
-        img: "/assets/images/catalog/img1.png",
+        img: "assets/images/catalog/img1.png",
         diametr: 15,
         size: 39,
         article: "ST 1538",
@@ -32,12 +32,12 @@ export const data = [
       {
         id: 13,
         name: "Подвесной подшипник 100х193,5",
-        img: "/assets/images/catalog/img2.png",
+        img: "assets/images/catalog/img2.png",
       },
       {
         id: 14,
         name: "Подвесной подшипник 22х66",
-        img: "/assets/images/catalog/img2.png",
+        img: "assets/images/catalog/img2.png",
       },
     ],
   },
@@ -48,12 +48,12 @@ export const data = [
       {
         id: 15,
         name: "Шлицевой фланец 57х164",
-        img: "/assets/images/catalog/img3.png",
+        img: "assets/images/catalog/img3.png",
       },
       {
         id: 16,
         name: "Шлицевой фланец",
-        img: "/assets/images/catalog/img3.png",
+        img: "assets/images/catalog/img3.png",
       },
     ],
   },
@@ -64,12 +64,12 @@ export const data = [
       {
         id: 17,
         name: "Шлицевой вал 62х2,5",
-        img: "/assets/images/catalog/img4.png",
+        img: "assets/images/catalog/img4.png",
       },
       {
         id: 18,
         name: "Шлицевой вал 62х2,5",
-        img: "/assets/images/catalog/img4.png",
+        img: "assets/images/catalog/img4.png",
       },
     ],
   },
@@ -80,12 +80,12 @@ export const data = [
       {
         id: 19,
         name: "Вилка в трубу 20х55",
-        img: "/assets/images/catalog/img5.png",
+        img: "assets/images/catalog/img5.png",
       },
       {
         id: 20,
         name: "Вилка в трубу 20",
-        img: "/assets/images/catalog/img5.png",
+        img: "assets/images/catalog/img5.png",
       },
     ],
   },
@@ -117,7 +117,7 @@ export function initCatalog(data) {
       const html = `<div class="items_body">
           <img src="${p.img}" alt="" class="items_body-img" />
           <div class="items_body-text">${p.name}</div>
-           <a href="product.html?id=${p.id}" class="items_btn">Подробнее</a>         
+           <a href="pages/product.html?id=${p.id}" class="items_btn">Подробнее</a>         
         </div>`;
       items.insertAdjacentHTML("beforeend", html);
     });
