@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Услуги</title>
+    <link rel="stylesheet" href="../main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_body">
+          <img src="/assets/images/log.svg" alt="logo" class="header_logo" />
+          <nav class="nav">
+            <ul class="nav_list">
+              <li class="nav_item">
+                <a href="/pages/services.html" class="nav_link">Услуги</a>
+              </li>
+              <li class="nav_item">
+                <a href="/pages/catalog.html" class="nav_link"
+                  >Каталог товаров</a
+                >
+              </li>
+              <li class="nav_item">
+                <a href="/pages/contacts.html" class="nav_link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header_btn">Меню</div>
+          <button id="headerBtn" class="header_body-btn blue-btn">
+            Запись на ремонт
+          </button>
+        </div>
+      </div>
+      <div class="men">
+        <div class="men_top">
+          <img src="/assets/images/logotip.png" class="men_title" />
+          <img class="men_close" src="/assets/images/close.svg" alt="close" />
+        </div>
+        <ul class="men_list">
+          <li class="men_item">
+            <a href="/pages/services.html" class="men_link">Услуги</a>
+          </li>
+          <li class="men_item">
+            <a href="/pages/catalog.html" class="men_link">Каталог товаров</a>
+          </li>
+          <li class="men_item">
+            <a href="/pages/contacts.html" class="men_link">Контакты</a>
+          </li>
+        </ul>
+        <button id="header" class="men_btn white-btn">Запись на ремонт</button>
+      </div>
+    </header>
+    <div class="modal-overlay">
+      <div class="modal">
+        <img src="/assets/images/close.svg" alt="close" class="modal_close" />
+        <div class="modal_title"></div>
+        <div class="modal_text">
+          Если у вас появились вопросы по работе сервиса, или вы хотите узнать
+          больше о той или иной запчасти больше, можете оставить заявку, наш
+          диспетчер рассмотрит ее и сразу же вам перезвонит и всё расскажет!
+        </div>
+        <div class="modal_input-wrap">
+          <input type="text" class="modal_input" placeholder="Ваш Email" />
+          <input
+            type="tel"
+            class="modal_input"
+            placeholder="Ваш номер телефона"
+          />
+          <input type="email" class="modal_input" placeholder="Ваш Email" />
+          <input
+            type="text"
+            class="modal_input wide-input"
+            placeholder="Ваш комментарий"
+          />
+        </div>
+        <button class="modal_btn">Запись на ремонт</button>
+      </div>
+    </div>
+    <section class="services">
+      <div class="container">
+        <div class="navigate mobile-navig-active">
+          <a href="../index.html" class="link">главная</a>
+          <img src="../assets/images/navig.svg" alt="" class="navigate-arrow" />
+          <p class="current">Каталог услуг</p>
+        </div>
+        <div class="services_title section-title">
+          Услуги, которые мы предоставляем нашим клиентам
+        </div>
+        <div class="services_body">
+          <div class="services_body-top">
+            <div class="navigate mobile-navig">
+              <a href="../index.html" class="link">главная</a>
+              <img
+                src="../assets/images/navig.svg"
+                alt=""
+                class="navigate-arrow"
+              />
+              <p class="current">услуги</p>
+            </div>
+          </div>
+          <div class="rowGroup">
+            <div class="rowGroup_body">
+              <div class="rowGroup_body-imgContainer">
+                <img
+                  src="/assets/images/servicesPage/service1.png"
+                  alt=""
+                  class="rowGroup_body-img"
+                />
+              </div>
+              <div class="column">
+                <div class="column_title">Ремонт карданных валов</div>
+                <div class="column_info">
+                  Ремонтируем и производим все виды карданных валов для ТС и
+                  промышленного оборудования!
+                </div>
+              </div>
+              <a class="linkService" href="repair.html">
+                <svg class="icon-darkBlue services_svg">
+                  <use href="/assets/sprite.svg#arrow"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="rowGroup_body">
+              <div class="rowGroup_body-imgContainer">
+                <img
+                  src="/assets/images/servicesPage/service2.png"
+                  alt=""
+                  class="rowGroup_body_img"
+                />
+              </div>
+              <div class="column">
+                <div class="column_title">Изменение длины</div>
+                <div class="column_info">
+                  Удлинение, уменьшение карданного вала Проводим данную
+                  манипуляцию качественно и выгодно!
+                </div>
+                <a href="change.html">
+                  <svg class="icon-darkBlue services_svg">
+                    <use href="/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="rowGroup_body">
+              <div class="rowGroup_body-imgContainer">
+                <img
+                  src="/assets/images/servicesPage/service3.png"
+                  alt=""
+                  class="rowGroup_body_img"
+                />
+              </div>
+              <div class="column">
+                <div class="column_title">Балансировка</div>
+                <div class="column_info">
+                  Балансируем все виды карданных валов для ТС и промышленного
+                  оборудования со скидкой до 70%
+                </div>
+                <a href="balance.html">
+                  <svg class="icon-darkBlue services_svg">
+                    <use href="/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="rowGroup_body">
+              <div class="rowGroup_body-imgContainer">
+                <img
+                  src="/assets/images/servicesPage/service4.png"
+                  alt=""
+                  class="rowGroup_body_img"
+                />
+              </div>
+              <div class="column">
+                <div class="column_title">Замена крестовин</div>
+                <div class="column_info">
+                  Замена крестовин карданного вала Гарантийное качество! +
+                  Скидка на балансировку 70%
+                </div>
+                <a href="replacing.html">
+                  <svg class="icon-darkBlue services_svg">
+                    <use href="/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="rowGroup_body">
+              <div class="rowGroup_body-imgContainer">
+                <img
+                  src="/assets/images/servicesPage/service5.png"
+                  alt=""
+                  class="rowGroup_body_img"
+                />
+              </div>
+              <div class="column">
+                <div class="column_title">Срочный ремонт</div>
+                <div class="column_info">
+                  Осуществляем выездное обслуживание всех видов карданных валов
+                  для ТС и промышленного оборудования
+                </div>
+                <a href="immediate.html">
+                  <svg class="icon-darkBlue services_svg">
+                    <use href="/assets/sprite.svg#arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <img
+            src="/assets/images/logotip.png"
+            alt="logo"
+            class="footer-top_img"
+          />
+          <div class="footer-top_text">
+            Узнавайте первым о новинках и новостях
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="footer-left">
+            <div class="footer-left_row">
+              <img
+                src="/assets/images/1.svg"
+                alt="call"
+                class="footer-left_img"
+              />
+              <a href="tel:+79635298180" class="footer-left_text"
+                >+7 (963) 529-81-80</a
+              >
+            </div>
+            <div class="footer-left_row">
+              <img
+                src="/assets/images/2.svg"
+                alt="geo"
+                class="footer-left_img"
+              />
+              <p class="footer-left_text">г. Барнаул, проспект Калинина, 108</p>
+            </div>
+            <div class="footer-left_row">
+              <img
+                src="/assets/images/2.svg"
+                alt="work-time"
+                class="footer-left_img"
+              />
+              <p class="footer-left_text">Ежедневно с 10:00 до 19:00</p>
+            </div>
+          </div>
+          <div class="footer-center">
+            <ul class="footer-center_list">
+              <li class="footer-center_item">
+                <a href="/pages/services.html" class="footer-center_link"
+                  >Услуги</a
+                >
+              </li>
+              <li class="footer-center_item">
+                <a href="/pages/catalog.html" class="footer-center_link"
+                  >Каталог товаров</a
+                >
+              </li>
+              <li class="footer-center_item">
+                <a href="/pages/contacts.html" class="footer-center_link"
+                  >Контакты</a
+                >
+              </li>
+              <li class="footer-center_item">
+                <a id="footerRepair" class="footer-center_link"
+                  >Запись на ремонт</a
+                >
+              </li>
+              <li class="footer-center_item">
+                <a id="footerOrder" class="footer-center_link"
+                  >Заказать запчасть</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-right">
+            <div class="footer-right_text">
+              Узнавайте первым о новинках и новостях
+            </div>
+            <div class="footer-right_wrap">
+              <input
+                type="text"
+                placeholder="Ваш Email"
+                class="footer-right_input"
+              />
+              <button class="footer-right_btn">подписаться</button>
+            </div>
+            <p class="footer-right_policy">
+              Нажимая на кнопку, вы соглашаетесь с
+              <span class="footer-right_policy-span"
+                >политикой конфиденциальности</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="../scripts/app.js"></script>
+  </body>
+</html>

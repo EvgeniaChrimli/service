@@ -1,0 +1,120 @@
+.main {
+  margin-bottom: 211px;
+
+  @media (max-width: 700px) {
+    margin: 0 14px;
+  }
+
+  &_title {
+    font-family: "Neutral", sans-serif;
+    font-size: clamp(43px, 7.7vw, 136px);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-darkBlue);
+    margin-bottom: 34px;
+    font-weight: 400;
+    line-height: 110%;
+
+    @media (max-width: 700px) {
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    @media (max-width: 350px) {
+      font-size: clamp(40px, 7.7vw, 136px);
+    }
+  }
+
+  &_body {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    color: var(--color-darkBlue);
+    font-family: "Inter-400", sans-serif;
+    font-size: 16px;
+    margin-bottom: 61px;
+    flex-wrap: wrap;
+    padding: 0 10px;
+
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
+    }
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+
+  &_body-left {
+    max-width: 309px;
+  }
+
+  &_body-center {
+    max-width: 352px;
+  }
+
+  &_body-right {
+    max-width: 200px;
+  }
+
+  &_img {
+    width: 100%;
+    max-width: 1760px;
+
+    @media (max-width: 700px) {
+      display: none;
+    }
+  }
+}
+
+.text {
+  width: 100%;
+}
+
+.mobile {
+  @media (min-width: 700px) {
+    display: none;
+  }
+
+  &_title {
+    color: var(--color-darkBlue);
+    font-family: "Inter-400", sans-serif;
+    font-size: 14px;
+    margin-bottom: 19px;
+    text-align: left;
+    max-width: 360px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.9px;
+  }
+
+  &_img {
+    width: 100%;
+    max-width: 647px;
+    background-position: center;
+  }
+
+  &_row {
+    padding-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-darkBlue);
+    font-family: "Inter-400", sans-serif;
+    font-size: 11px;
+    margin-bottom: 65px;
+    font-weight: 400;
+    line-height: 100%;
+  }
+
+  &_row-left {
+    text-align: left;
+    max-width: 150px;
+  }
+
+  &_row-right {
+    text-align: right;
+    max-width: 150px;
+  }
+}

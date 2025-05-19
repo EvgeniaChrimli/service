@@ -1,0 +1,375 @@
+.product {
+  position: relative;
+  @media (max-width: 1360px) {
+    padding: 0 14px;
+  }
+  margin-bottom: 156px;
+  &_body-top {
+    display: flex;
+    gap: 56px;
+    justify-content: center;
+    margin-bottom: 181px;
+    padding-top: 10px;
+
+    @media (max-width: 1360px) {
+      flex-wrap: wrap;
+      padding-top: 30px;
+      margin-bottom: 52px;
+    }
+  }
+
+  &_body-img {
+    margin-top: 61px;
+    width: 100%;
+    max-width: 625px;
+    @media (max-width: 600px) {
+      max-width: 347px;
+      margin-top: 0;
+    }
+  }
+
+  &_body-container {
+    display: flex;
+    flex-direction: column;
+    gap: 63px;
+    max-width: 600px;
+  }
+
+  &_body-title {
+    text-align: center;
+
+    @media (max-width: 600px) {
+      font-size: 32px;
+      order: -1;
+    }
+  }
+
+  &_body-list {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+
+    @media (max-width: 600px) {
+      order: 1;
+    }
+  }
+
+  &_body-item {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Inter-600", sans-serif;
+    color: #424242;
+    font-size: 20px;
+    border-bottom: 1px solid var(--color-light-gray);
+    padding-bottom: 17px;
+
+    @media (max-width: 1360px) {
+      font-size: 18px;
+    }
+  }
+
+  &_body-btn {
+    @media (max-width: 750px) {
+      display: none;
+    }
+  }
+
+  &_body-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 600px) {
+      order: -1;
+    }
+  }
+
+  &_body-price {
+    font-family: "Inter-600", sans-serif;
+    color: #424242;
+    font-size: 36px;
+    font-weight: 600;
+
+    @media (max-width: 1360px) {
+      font-size: 26px;
+    }
+  }
+}
+
+.product-bottom {
+  color: var(--color-dark);
+
+  &_title {
+    font-family: "Inter-600", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-bottom: 34px;
+
+    @media (max-width: 600px) {
+      font-size: 25px;
+    }
+  }
+
+  &_body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    @media (max-width: 600px) {
+      gap: 9px;
+      justify-content: center;
+    }
+  }
+}
+.bottom-body {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @media (max-width: 600px) {
+    padding-top: 6px;
+  }
+
+  &_img {
+    width: 100%;
+    max-width: 400px;
+
+    @media (max-width: 600px) {
+      max-width: 169px;
+    }
+  }
+
+  &_row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &_text {
+    font-family: "Inter-600", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+
+  &_price {
+    font-family: "Inter-400", sans-serif;
+    font-size: 24px;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+    }
+  }
+
+  &_btn {
+    max-width: 212px;
+
+    @media (max-width: 600px) {
+      font-size: 12px;
+      padding: 13px 25px;
+    }
+  }
+}
+
+.prod-mobile {
+  display: block;
+  order: 2;
+  padding: 24px 106px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  background-color: var(--color-darkBlue);
+  border-radius: 30px;
+  color: var(--color-white);
+  font-family: "Inter-500", sans-serif;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: all 1s;
+  cursor: pointer;
+  flex-shrink: 0;
+
+  @media (min-width: 750px) {
+    display: none;
+  }
+}
+
+.prod-mobile:hover {
+  background-color: var(--color-light-blue);
+}
+
+.prod-mobile:active {
+  background-color: var(--color-dark);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-overlay.active {
+  display: flex;
+  z-index: 2000;
+}
+
+.modal {
+  background-color: var(--color-darkBlue);
+  flex-direction: column;
+  padding: 138px 81px;
+  max-width: 980px;
+  color: var(--color-white);
+  border-radius: 20px;
+  position: relative;
+
+  @media (max-width: 1823px) {
+    margin-top: 60px;
+    padding: 108px 61px;
+    max-width: 700px;
+    max-height: 680px;
+  }
+
+  @media (max-width: 720px) {
+    padding: 38px 14px;
+    max-width: 330px;
+    margin-top: 0;
+  }
+
+  &_close {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    top: 55px;
+    right: 55px;
+    cursor: pointer;
+
+    @media (max-width: 1823px) {
+      top: 35px;
+      right: 35px;
+    }
+
+    @media (max-width: 720px) {
+      width: 19px;
+      height: 19px;
+      top: 25px;
+      right: 25px;
+    }
+  }
+
+  &_title {
+    font-family: "Neutral", sans-serif;
+    font-size: clamp(24px, 2.2vw, 40px);
+    text-transform: uppercase;
+    margin-bottom: 52px;
+    flex-shrink: 0;
+
+    @media (max-width: 1823px) {
+      margin-bottom: 27px;
+      padding-top: 10px;
+    }
+  }
+
+  &_text {
+    font-family: "Inter-400", sans-serif;
+    font-size: 20px;
+    margin-bottom: 58px;
+
+    @media (max-width: 1823px) {
+      font-size: 16px;
+      margin-bottom: 28px;
+    }
+  }
+
+  &_input-wrap {
+    width: 100%;
+    max-width: 798px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    @media (max-width: 1823px) {
+      max-width: 598px;
+      gap: 19px;
+    }
+
+    @media (max-width: 720px) {
+      max-width: 298px;
+    }
+  }
+
+  &_input {
+    width: 100%;
+    height: 53px;
+    border-radius: 76px;
+    border: 1px solid var(--color-white);
+    caret-color: var(--color-white);
+    background: transparent;
+    padding: 14px 0 14px 32px;
+
+    @media (max-width: 1823px) {
+      height: 45px;
+    }
+  }
+
+  &_input::-webkit-input-placeholder {
+    font-family: "Inter-300", sans-serif;
+    color: var(--color-white);
+    font-size: 16px;
+  }
+  &_input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &_btn {
+    margin-top: 54px;
+    color: var(--color-darkBlue);
+    border-radius: 30px;
+    padding: 18px 220px;
+    border: 1px solid transparent;
+    font-family: "Inter-500", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 1s;
+    width: 100%;
+
+    @media (max-width: 1823px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width: 720px) {
+      padding: 20px 88px;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+  }
+
+  &_btn:hover {
+    background-color: var(--color-light-blue);
+  }
+
+  &_btn:active {
+    background-color: var(--color-dark);
+  }
+}
+.wide-input {
+  height: 141px;
+}
+
+@media (max-width: 1823px) {
+  .wide-input {
+    height: 111px;
+  }
+}
+
+@media (max-width: 720px) {
+  .wide-input {
+    height: 80px;
+  }
+}

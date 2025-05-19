@@ -1,0 +1,147 @@
+.repair {
+  margin-bottom: 156px;
+
+  @media (max-width: 800px) {
+    padding: 0 14px;
+    margin-bottom: 97px;
+  }
+
+  &_title {
+    text-align: right;
+    line-height: 100%;
+    margin-bottom: 74px;
+
+    @media (max-width: 800px) {
+      max-width: 332px;
+      margin-bottom: 24px;
+      margin-left: auto;
+    }
+  }
+
+  &_body {
+    border-top: 2px solid var(--color-dark);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &_body-top {
+    padding-top: 57px;
+  }
+}
+
+.rowContainer {
+  color: var(--color-dark);
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  &_left {
+    font-family: "Neutral", sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    padding-top: 55px;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_right {
+    display: flex;
+    gap: 65px;
+    font-family: "Inter-400", sans-serif;
+    font-size: 20px;
+
+    @media (max-width: 1300px) {
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+  }
+
+  &_right-text {
+    max-width: 350px;
+  }
+
+  &_right-col {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.col-list {
+  margin-bottom: 70px;
+  padding-top: 30px;
+}
+.col-item {
+  list-style-type: disc;
+}
+
+.imageContainer {
+  padding-top: 83px;
+  display: flex;
+  gap: 39px;
+
+  @media (max-width: 1300px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &_left {
+    width: 100%;
+    max-width: 400px;
+    max-height: 284px;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+  &_right {
+    width: 100%;
+    max-width: 1300px;
+
+    @media (max-width: 1560px) {
+      max-width: 1000px;
+    }
+  }
+}
+
+.service-btn {
+  background-color: var(--color-darkBlue);
+  border-radius: 31px;
+  color: var(--color-white);
+  padding: 23px 39.5px;
+  font-family: "Inter-400", sans-serif;
+  font-size: 24px;
+  line-height: 100%;
+  border: 1px solid transparent;
+  transition: all 1s;
+  cursor: pointer;
+  flex-shrink: 0;
+  margin-left: auto;
+}
+
+.service-btn:hover {
+  background-color: var(--color-light-blue);
+}
+
+.service-btn:active {
+  background-color: var(--color-dark);
+}
+
+@media (max-width: 800px) {
+  .service-btn {
+    margin: 0 auto;
+    padding: 24px 108px;
+    font-size: 16px;
+  }
+}

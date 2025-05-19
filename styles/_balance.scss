@@ -1,0 +1,28 @@
+.balance {
+  margin-bottom: 156px;
+  @media (max-width: 1300px) {
+    padding: 0 14px;
+  }
+  &_title {
+    text-align: right;
+    margin-bottom: 74px;
+
+    @media (max-width: 700px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &_body {
+    border-top: 1px solid var(--color-dark);
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.balance-top {
+  padding-top: 57px;
+}
+
+.right-row-text p {
+  margin-bottom: 70px;
+}
